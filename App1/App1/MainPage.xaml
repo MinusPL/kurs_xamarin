@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+    <StackLayout>
+	    <Label Text="Welcome to Xamarin Forms!" 
+               VerticalOptions="Start" 
+               HorizontalOptions="Center" />
+
+        <Image Source="todo.png" Aspect="AspectFit"/>
+
+        <Button BackgroundColor="Aquamarine" Text="Lista wydarzeń" Clicked="Button_Clicked"/>
+        <Button BackgroundColor="Aquamarine" Text="Test" Clicked="TestButton_Clicked"/>
+    </StackLayout>
+</ContentPage>
