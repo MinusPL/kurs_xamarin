@@ -16,18 +16,10 @@ namespace App1.ViewModels
 
         public TestViewModel()
         {
-            try
-            {
-                var x = Task.Run(()=>DatabaseHelper.GetTable<TaskDTO>());
-                var y = x.Result;
-                TaskName = y[0].TaskName;
-                Date = y[0].Date;
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine("ERROR KURWA:" + e);
-            }
-            
+            var x = Task.Run(()=>DatabaseHelper.GetTable<TaskDTO>());
+            var y = x.Result;
+            TaskName = y[0].TaskName;
+            Date = y[0].Date;
         }
     }
 }
