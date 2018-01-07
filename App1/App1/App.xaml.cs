@@ -22,7 +22,7 @@ namespace App1
         {
             await DatabaseHelper.Initialize();
 
-            var x = new TaskDTO() {
+                var x = new TaskDTO() {
                 TaskName = "Sprawko z Fizyki",
                 Date = DateTime.Now,
                 Notification = false
