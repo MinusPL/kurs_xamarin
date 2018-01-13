@@ -42,5 +42,12 @@ namespace App1.Helpers
                 await Initialize();
             return await Database.InsertAsync(item);
         }
+
+        public static async Task<int> UpdateSingle<T>(T item) where T: baseDTO, new()
+        {
+            if (Database == null)
+                await Initialize();
+            return await Database.UpdateAsync(item);
+        }
     }
 }

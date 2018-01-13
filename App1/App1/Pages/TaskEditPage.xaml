@@ -3,14 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Pages.TaskEditPage">
     <ContentPage.Content>
-        <TableView Intent="Form">
-            <TableRoot>
-                <TableSection>
-                    <EntryCell Label="Nazwa zadania: " Text="Sprawozdanie z elektroniki"/>
-                    <EntryCell Label="Data: " Text="18:00 12 grudnia 2017"/>
-                    <SwitchCell Text="Powiadomienie:" On="True"/>
-                </TableSection>
-            </TableRoot>
-        </TableView>
+        <StackLayout>
+            
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection>
+                        <EntryCell Label="Nazwa zadania: " Text="{Binding TaskName}"/>
+                        <EntryCell Label="Data: " Text="{Binding Date}"/>
+                        <SwitchCell Text="Powiadomienie:" On="{Binding Notify}"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="{Binding ButtonText}" Command="{Binding ClickCommand}"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

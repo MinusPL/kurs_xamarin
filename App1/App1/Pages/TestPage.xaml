@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="{Binding TaskName}" />
-            <Label Text="{Binding Date, StringFormat='{0:HH MM SS}'}" />
+            <Label Text="{Binding Date, StringFormat='{0:HH mm ss}'}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -55,6 +55,10 @@
       <DependentUpon>TestPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\TaskAddViewModel.cs" />
+    <Compile Include="ViewModels\TaskEditViewModel.cs" />
+    <Compile Include="ViewModels\TaskEditViewModelBase.cs" />
+    <Compile Include="ViewModels\TaskListViewModel.cs" />
     <Compile Include="ViewModels\TestViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

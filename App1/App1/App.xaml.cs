@@ -21,14 +21,6 @@ namespace App1
         protected override async void OnStart()
         {
             await DatabaseHelper.Initialize();
-
-                var x = new TaskDTO() {
-                TaskName = "Sprawko z Fizyki",
-                Date = DateTime.Now,
-                Notification = false
-            };
-
-            await DatabaseHelper.InsertSingle<TaskDTO>(x);
         }
 
         protected override void OnSleep()
